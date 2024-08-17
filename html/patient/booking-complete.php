@@ -1,7 +1,7 @@
 <?php
 
     //learn from w3schools.com
-
+    ob_start();
     session_start();
 
     if(isset($_SESSION["user"])){
@@ -41,4 +41,5 @@
 
         }
     }
+ob_end_flush();
  ?>
