@@ -1,9 +1,9 @@
 <?php
-
-    //learn from w3schools.com
+    ob_start(); // Start output buffering
 
     session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -423,3 +423,6 @@
 
 </body>
 </html>
+<?php
+    ob_end_flush(); // End output buffering
+?>
