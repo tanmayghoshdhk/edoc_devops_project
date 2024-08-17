@@ -1,5 +1,5 @@
 <?php
-
+    ob_start();
     session_start();
 
     if(isset($_SESSION["user"])){
@@ -53,6 +53,6 @@
         //print_r($email);
         header("location: ../logout.php");
     }
-
+ob_end_flush(); 
 
 ?>
