@@ -1,6 +1,5 @@
 <?php
-
-    //learn from w3schools.com
+    ob_start(); // Start output buffering
 
     session_start();
 ?>
@@ -763,3 +762,6 @@
 
 </body>
 </html>
+<?php
+    ob_end_flush(); // End output buffering
+?>
