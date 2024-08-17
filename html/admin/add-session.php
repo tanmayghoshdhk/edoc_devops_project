@@ -1,4 +1,9 @@
 <?php
+    ob_start(); // Start output buffering
+
+    session_start();
+?>
+<?php
 
     session_start();
 
@@ -27,4 +32,7 @@
     }
 
 
+?>
+<?php
+    ob_end_flush(); // End output buffering
 ?>
