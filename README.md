@@ -45,17 +45,3 @@ The project is deployed on a dedicated server using Jenkins. The deployment step
 To run the project on the same server where Jenkins is deployed, you can directly use Docker Compose:
 docker-compose up --build -d
 
-## Repository Structure
-edoc_devops_project/
-├── Dockerfile
-├── docker-compose.yml
-├── src/
-│   ├── index.php
-│   ├── ...
-├── db/
-│   ├── SQL_Database_edoc.sql
-├── README.md
-
-- Dockerfile: Contains instructions to build the Docker image for the application.
-- docker-compose.yml: Defines the services, networks, and volumes used by Docker Compose.
-- db: Directory containing the SQL database backup.
